@@ -142,17 +142,17 @@ def trip_duration_stats(df):
     #https://stackoverflow.com/questions/4048651/python-function-to-convert-seconds-into-minutes-hours-and-days/4048773
     day= t//86400
     hour= (t-(day*86400))//3600
-    minit= (t - ((day*86400) + (hour*3600)))//60
-    seconds= t - ((day*86400) + (hour*3600) + (minit*60))
-    print("The total trip duration was {} days, {} hours, {} minutes, {} seconds".format(day, hour, minit, seconds))
+    minute= (t - ((day*86400) + (hour*3600)))//60
+    seconds= t - ((day*86400) + (hour*3600) + (minute*60))
+    print("The total trip duration was {} days, {} hours, {} minutes, {} seconds".format(day, hour, minute, seconds))
     # TO DO: display mean travel time
     mean_seconds = df["Trip Duration"].mean()
     t1 = int(mean_seconds)
     day1 = t1//86400
     hour1 = (t1-(day1*86400))//3600
-    minit1 = (t1 - ((day1*86400) + (hour1*3600)))//60
-    seconds1 = t1 - ((day1*86400) + (hour1*3600) + (minit1*60))
-    print("The average trip duration was {} hours, {} minutes, {} seconds".format( hour1, minit1, seconds1))
+    minute1 = (t1 - ((day1*86400) + (hour1*3600)))//60
+    seconds1 = t1 - ((day1*86400) + (hour1*3600) + (minute1*60))
+    print("The average trip duration was {} hours, {} minutes, {} seconds".format( hour1, minute1, seconds1))
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
