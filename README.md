@@ -6,6 +6,7 @@ Udacity Python Bikeshare Project
 
 ### Description
 This is an interactive project that shows different stats on the bikeshare programs of Chicago, New York City, and Washington.
+the program shows stats by day in a month chosen by the user.
 
 ### Files used
 washington.csv
