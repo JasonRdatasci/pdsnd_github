@@ -14,3 +14,4 @@ new_york_city.csv
 
 ### Credits
 credit to stackoverflow and all its contributors for helping!
+particularly to this link https://stackoverflow.com/questions/4048651/python-function-to-convert-seconds-into-minutes-hours-and-days/4048773
